@@ -13,7 +13,11 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
+/*--------------------
 
+		HEADER
+
+--------------------*/
 
 header {
 	padding: 20px 0;
@@ -23,7 +27,11 @@ header h1 {
 	text-align: center;
 }
 
+/*--------------------
 
+		MAIN
+
+--------------------*/
 
 main p {
 	text-align: center;
@@ -33,7 +41,7 @@ main .col-md-5 {
 	padding: 30px 0;
 }
 
-main #total-0, main #total-1 {
+main #sum-0, main #total-1 {
 	margin: 80px;
 	font-size: 86px;
 }
@@ -46,13 +54,20 @@ main #current-0, main #current-1 {
 	color: #fff;
 }
 
+/*--------------------
+
+		DICE
+
+--------------------*/
+
 .dice {
 	width: 100px;
 	height: 100px;
 	border: 2px solid black;
 	margin: 50px auto;
 	border-radius: 25px;
-	box-shadow: 5px 5px #888;
+	box-shadow: 5px 5px red;
+
 }
 
 .dice p {
@@ -61,7 +76,11 @@ main #current-0, main #current-1 {
 	padding-top: 17px;
 }
 
+/*--------------------
 
+	  JAVASCRIPT
+
+--------------------*/
 
 .active {
 	background-color: #e8e8e8;
