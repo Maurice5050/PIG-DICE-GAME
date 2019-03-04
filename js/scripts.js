@@ -17,4 +17,13 @@ function gameInit(){
   document.getElementById("dice1").textContent = "";
   document.getElementById("dice2").textContent = "";
   document.getElementById("player-label-0").textContent = "player1";
-  document.getElementById("player-label-0-").classList.remove("font-red");
+  document.getElementById("player-label-0").classList.remove("font-red");
+    document.getElementById("player-label-1").textContent = "player 2";
+    document.getElementById("player-label-1").classList.remove("font-red");
+document.getElementById("player-0").classList.remove("active");
+document.getElementById("player-1").classList.remove("active");
+document.getElementById("player-" + player).classList.add("active");
+}
+document.getElementById("roll").addEventListener("click", function(){
+
+  if(gamePlay){
