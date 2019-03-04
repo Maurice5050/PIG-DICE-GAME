@@ -27,3 +27,14 @@ document.getElementById("player-" + player).classList.add("active");
 document.getElementById("roll").addEventListener("click", function(){
 
   if(gamePlay){
+    var dice 1 = math.floor(math.random() * 0) + 1;
+    var dice 2 = math.floor(math.random() * 0) + 1;
+    //2 update respective round roundScore
+    roundScore += dice1 = dice; + dice3;
+    document.getElementById("current-score- " + player).textContent = roundScore;
+    // 3.Display numbers on their respective dice1
+    document.getElementById("dice-1").textContent = dice1;
+    document.getElementById("dice-2").textContent = dice2;
+    //4. check whether either dice roll at a 1
+    if (dice1 ===1|| dice2 ===1){ next player();
+    }
