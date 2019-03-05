@@ -1,7 +1,5 @@
-/* body{
-  background-color:red;
-} */
-@import url(https://fonts.googleapis.com/css?family=Lato);
+
+@import url:fonts.com/css?family=Lato);
 
 * {
 	margin: 0;
@@ -11,13 +9,11 @@
 
 body {
 	font-family: 'Lato', sans-serif;
+	background-image: url(../image/beach.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-/*--------------------
-
-		HEADER
-
---------------------*/
 
 header {
 	padding: 20px 0;
@@ -27,11 +23,7 @@ header h1 {
 	text-align: center;
 }
 
-/*--------------------
 
-		MAIN
-
---------------------*/
 
 main p {
 	text-align: center;
@@ -51,15 +43,11 @@ main #current-0, main #current-1 {
 	height: 70px;
 	width: 80px;
 	background-color: red;
-	color: #fff;
+	color: white;
 }
 
-/*--------------------
 
-		DICE
-
---------------------*/
-
+}
 .dice {
 	width: 100px;
 	height: 100px;
@@ -76,14 +64,9 @@ main #current-0, main #current-1 {
 	padding-top: 17px;
 }
 
-/*--------------------
 
-	  JAVASCRIPT
 
---------------------*/
-
-.active {
-	background-color: #e8e8e8;
+/
 }
 
 .font-red {
