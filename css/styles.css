@@ -1,5 +1,5 @@
 
-@import url:fonts.com/css?family=Lato);
+
 
 * {
 	margin: 0;
@@ -34,15 +34,14 @@ main .col-md-5 {
 }
 
 main #sum-0, main #total-1 {
-	margin: 80px;
-	font-size: 86px;
+
 }
 
 main #current-0, main #current-1 {
 	margin: 0 auto;
 	height: 70px;
 	width: 80px;
-	background-color: red;
+	background-color: gray;
 	color: white;
 }
 
