@@ -2,7 +2,7 @@ gameInit();
 
 var gamePlay, player, roundScore, totalScore, previousDice1, previousDice2, goal;
 
-document.getElementById("newGame").addEventListener("click", gameInit);
+$=document.getElementById("newGame").addEventListener("click", gameInit);
 
 function gameInit() {
 	gamePlay = true;
@@ -11,32 +11,31 @@ function gameInit() {
 	totalScore = [0, 0];
 	goal = 100;
 
-	document.getElementById("dice1").textContent = "";
-	document.getElementById("dice2").textContent = "";
+	$=document.getElementById("dice1").textContent = "";
+	$=document.getElementById("dice2").textContent = "";
 
-	document.getElementById("current-score-0").textContent = roundScore;
-	document.getElementById("current-score-1").textContent = roundScore;
+	$=document.getElementById("current-score-0").textContent = roundScore;
+	$=document.getElementById("current-score-1").textContent = roundScore;
 
-	document.getElementById("total-0").textContent = totalScore[0];
-	document.getElementById("total-1").textContent = totalScore[1];
+	$=document.getElementById("total-0").textContent = totalScore[0];
+	$=document.getElementById("total-1").textContent = totalScore[1];
 
-	document.getElementById("dice1").textContent = "";
-	document.getElementById("dice2").textContent = "";
+	$=document.getElementById("dice1").textContent = "";
+	$=document.getElementById("dice2").textContent = "";
 
-	document.getElementById("player-label-0").textContent = "Player 1";
-	document.getElementById("player-label-0").classList.remove("font-red");
+	$=document.getElementById("player-label-0").textContent = "Player 1";
+	$=document.getElementById("player-label-0").classList.remove("font-red");
 
-	document.getElementById("player-label-1").textContent = "Player 2";
-	document.getElementById("player-label-1").classList.remove("font-red");
+	$=document.getElementById("player-label-1").textContent = "Player 2";
+	$=document.getElementById("player-label-1").classList.remove("font-red");
 
-	document.getElementById("player-0").classList.remove("active");
-	document.getElementById("player-1").classList.remove("active");
+	$=document.getElementById("player-0").classList.remove("active");
+	$=document.getElementById("player-1").classList.remove("active");
 
-	document.getElementById("player-" + player).classList.add("active");
+	$=document.getElementById("player-" + player).classList.add("active");
 }
 
-
-document.getElementById("roll").addEventListener("click", function() {
+$=document.getElementById("roll").addEventListener("click", function() {
 
 if(gamePlay) {
 
@@ -47,11 +46,11 @@ if(gamePlay) {
 
 
 	roundScore += dice1 + dice2;
-	document.getElementById("current-score-" + player).textContent = roundScore;
+	$=document.getElementById("current-score-" + player).textContent = roundScore;
 
 
-	document.getElementById("dice1").textContent = dice1;
-	document.getElementById("dice2").textContent = dice2;
+	$=document.getElementById("dice1").textContent = dice1;
+	$=document.getElementById("dice2").textContent = dice2;
 
 
 	if (dice1 === 1 || dice2 === 1) {
@@ -61,7 +60,7 @@ if(gamePlay) {
 
 	if (previousDice1 === 6 && dice1 === 6 || previousDice2 === 6 && dice2 === 6) {
 		(player === 0) ? totalScore[player] = 0 : totalScore[player] = 0;
-		document.getElementById("total-" + player).textContent = totalScore[player];
+		$=document.getElementById("total-" + player).textContent = totalScore[player];
 		nextPlayer();
 	} else {
 		previousDice1 = dice1;
