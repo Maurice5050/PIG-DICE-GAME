@@ -1,9 +1,8 @@
-
 gameInit();
 
 var gamePlay, player, roundScore, totalScore, previousDice1, previousDice2, goal;
 
-document.getElementById("niceGame").addEventListener("click", gameInit);
+document.getElementById("newGame").addEventListener("click", gameInit);
 
 function gameInit() {
 	gamePlay = true;
@@ -18,33 +17,36 @@ function gameInit() {
 	document.getElementById("current-score-0").textContent = roundScore;
 	document.getElementById("current-score-1").textContent = roundScore;
 
-	document.getElementById("sum-0").textContent = totalScore[0];
+	document.getElementById("total-0").textContent = totalScore[0];
 	document.getElementById("total-1").textContent = totalScore[1];
 
 	document.getElementById("dice1").textContent = "";
 	document.getElementById("dice2").textContent = "";
 
-	document.getElementById("label-0").textContent = "Player 1";
-	document.getElementById("label-0").classList.remove("font-red");
+	document.getElementById("player-label-0").textContent = "Player 1";
+	document.getElementById("player-label-0").classList.remove("font-red");
 
 	document.getElementById("player-label-1").textContent = "Player 2";
 	document.getElementById("player-label-1").classList.remove("font-red");
 
+	document.getElementById("player-0").classList.remove("active");
 	document.getElementById("player-1").classList.remove("active");
-	document.getElementById("player-2").classList.remove("active");
 
 	document.getElementById("player-" + player).classList.add("active");
 }
 
 
-document.getElementById("spin").addEventListener("click", function() {
+document.getElementById("roll").addEventListener("click", function() {
 
 if(gamePlay) {
 
-var dice1 = Math.floor(Math.random() * 6) + 1;
+
+
+	var dice1 = Math.floor(Math.random() * 6) + 1;
 	var dice2 = Math.floor(Math.random() * 6) + 1;
 
-roundScore += dice1 + dice2;
+
+	roundScore += dice1 + dice2;
 	document.getElementById("current-score-" + player).textContent = roundScore;
 
 
@@ -73,9 +75,11 @@ roundScore += dice1 + dice2;
 document.getElementById("hold").addEventListener("click", function() {
 if (gamePlay) {
 
+
 	totalScore[player] += roundScore;
-cordingly
-	if (totalScore[player] >= goal) {
+
+
+	if (totalScore[player] >= score) {
 		document.getElementById("total-" + player).textContent = totalScore[player];
 		document.getElementById("player-label-" + player).textContent = "WINNER!";
 		document.getElementById("player-label-" + player).classList.add("font-red");
