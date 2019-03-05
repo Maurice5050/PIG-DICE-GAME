@@ -8,7 +8,7 @@
 }
 
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Noto Serif', serif;
 	background-image: url(../image/beach.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -65,7 +65,7 @@ main #current-0, main #current-1 {
 
 
 
-/
+
 }
 
 .font-red {
